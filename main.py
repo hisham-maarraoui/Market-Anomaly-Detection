@@ -4,7 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
 
-data = pd.read_csv(r'c:\Users\chazi\Downloads\FinancialMarketData.xlsx - Download.csv')  
+data = pd.read_csv(r'FinancialMarketData.xlsx - Download.csv')  
 
 print(data.head())
 print(data.info())
