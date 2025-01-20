@@ -1,8 +1,18 @@
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
+from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score, accuracy_score
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import IsolationForest
+from sklearn.decomposition import PCA
+import xgboost as xgb
+
 
 data = pd.read_csv(r'FinancialMarketData.xlsx - Download.csv')  
 
